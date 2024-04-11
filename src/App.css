@@ -1,0 +1,54 @@
+.App{
+box-sizing: border-box;
+text-align: center;
+min-height: 100vh;
+}
+
+.Galan {
+border: 2px solid gray;
+width: 500px;
+height: 500px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: pink;
+}
+
+.top {
+  width: 400px;
+  height: 200px;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.top > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.bottom {
+width: 400px;
+height: 200px;
+gap: 10px;
+background-color: #2196F3;
+padding: 10px;
+
+display: grid;
+grid-template-areas:
+'item5 item6 item7 item7'
+'item5 item6 item8 item8';
+}
+
+.bottom > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item5 { grid-area: item5; }
+.item6 { grid-area: item6; }
+.item7 { grid-area: item7; }
+.item8 { grid-area: item8; }
